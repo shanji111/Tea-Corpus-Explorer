@@ -16,7 +16,6 @@ pip install -r requirements.txt
 - `make_display_text.py`: 生成用于展示的文本数据 (生成 `all_corpus_texts_display.xlsx` 和 `all_corpus_texts.json`)
 - `to_json.py`: 将Excel数据转换为Web可用的JSON格式
 
-**注意**: 这些脚本依赖于原始数据文件 (如 `E:\COHA\tea_bydecade\all_corpus_texts.xlsx`)，如果缺少这些文件，脚本将无法运行。
 
 ## 运行Web应用
 Web前端位于 `web` 目录下。
@@ -31,7 +30,3 @@ Web前端位于 `web` 目录下。
 ```bash
 python run_server.py
 ```
-
-## 已知问题
-- `web` 目录下缺少 `index.html` 和 `explore.html`，这可能导致部分导航链接无法打开。
-- `web/data` 目录下缺少 `tea_hits_cleaned.json` 和 `all_corpus_texts.json`，这会导致相关页面无法加载数据。
